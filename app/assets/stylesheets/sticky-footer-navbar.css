@@ -12,7 +12,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 35px;
-  background-color: #840000;
+  background-color: #3c0000;
 }
 
 body > .container{
@@ -21,6 +21,7 @@ body > .container{
 
 .container-fluid .text-muted {
   margin: 10px 0 0 0;
+  color: #ffffff;
 }
 
 code {
