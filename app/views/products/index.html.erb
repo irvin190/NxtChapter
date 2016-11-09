@@ -2,6 +2,8 @@
 
 <h1>Products</h1>
 
+<!-- DELETE FOLLOWING TEST VARIABLE ONCE FINISHED -->
+<%= @test_variable %>
 <!-- small loop to show number + 1
 <% paragraph_number = 1 %>
 <% 8.times do %>
@@ -24,7 +26,7 @@
         <%= link_to 'Edit', edit_product_path(product) %>
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div><!-- /col -->
-    <% end %>
+    <% end %><!-- end loop -->
   </div><!-- row -->
 </div><!-- container -->
 

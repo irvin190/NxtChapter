@@ -5,6 +5,8 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+#DELETE test_variable ONCE FINISHED
+    @test_variable = 42
   end
 
   # GET /products/1
