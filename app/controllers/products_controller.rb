@@ -4,9 +4,14 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.limit(3)
 #DELETE test_variable ONCE FINISHED
     @test_variable = 42
+    if params[:q]
+      search_term = params[:q]
+      @products = Product.where("name LIKE ?", "%#{search_term}%")
+    else
+      @products = Product.all
+    end
   end
 
   # GET /products/1
