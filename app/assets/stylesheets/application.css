@@ -19,11 +19,15 @@
  }
 
  .merch_search {
-  color: #C23838;
-  border-radius: 6px;
+  color: #e8c6c6;
+  border-radius: 10px;
 }
 
 .label {
   font-size: 1.2em;
   color: red;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+color: #df9191 !important;
 }

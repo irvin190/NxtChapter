@@ -33,7 +33,7 @@
 
           <%= form_tag("/products", method: "get", class: "navbar-form navbar-left") do %>
             <%= label_tag ':q', 'Search for:', class: "form-group label"%>
-            <%= text_field_tag(:q, nil, {placeholder: "search the merch", size:25, class: "merch_search"}) %>
+            <%= text_field_tag(:q, nil, {placeholder: "search the merch", size:25, class: "form-control merch_search"}) %>
             <%= submit_tag("haz click aqui") %>
           <% end %>
 
