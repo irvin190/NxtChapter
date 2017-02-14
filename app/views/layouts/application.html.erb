@@ -15,6 +15,13 @@
   </head>
 
   <body>
+    <% if notice %>
+    <p id="notice" class="center_text"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+    <p id="alert" class="center_text"><%= alert %></p>
+    <% end %>
+
     <nav class="navbar navbar-default navbar-inverse">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,14 +56,17 @@
                 <li><a href="#">Separated link</a></li>
               </ul>
             </li>
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
-    <p class="alert"><%= alert %></p>
-
-<br><br>
 
     <div class= "container">
       <%= yield %>

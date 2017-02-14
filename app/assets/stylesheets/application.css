@@ -31,3 +31,17 @@
 ::-moz-placeholder {  /* Firefox 19+ */
 color: #df9191 !important;
 }
+
+.form {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.center_text{ /*to center (login/logout) text*/
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
