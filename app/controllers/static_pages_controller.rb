@@ -4,13 +4,13 @@ class StaticPagesController < ApplicationController
   end
 
   def landing_page
-    @waza_product = Product.first
+    @waza_product = Product.second
     @test_variable = 42
     @products = Product.limit(3)
   end
 
   def contact
-    @test_variable = 42
+    @test_variable = 1990
   end
 
   def thank_you
