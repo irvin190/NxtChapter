@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @product.name %></h1>
+<div class="container">
+  <div class="row">
+    <div class= "col-xs-8 col-md-6">
+      <a href="/static_pages/about">
+        <%= image_tag(@product.image_url, class: "thumbnail img-responsive", alt:"too cool")%>
+      </a>
+    </div>
+  </div>
+</div>
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
@@ -24,6 +34,10 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
+
+<!--<%= @product.highest_rating_comment %>
+    <%= @product.lowest_rating_comment %> -->
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
