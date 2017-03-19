@@ -45,6 +45,9 @@
 <%= render partial: 'new_comment'%>
 <%= render partial: 'comments'%>
 
+<div class= "flickr_pagination">
+  <%= will_paginate @comments %>
+</div>
 
 </div>
 <!--<%= @product.highest_rating_comment %>
