@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   #before_action :authenticate_user!, :except => [:show, :index] ###to allow nonusers to view signed users on site
   load_and_authorize_resource
 
-  # GET /users0
+  # GET /users
   # GET /users.json
   def index
     @users = User.all
